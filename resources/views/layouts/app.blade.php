@@ -18,6 +18,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @yield('css')
+    @livewireStyles
 </head>
 <body>
     <div id="app">
@@ -47,7 +49,7 @@
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                   <a class="dropdown-item" href="/admin/images">Images</a>
-                                  <a class="dropdown-item" href="#">Page Layouts</a>
+                                  <a class="dropdown-item" href="/admin/layouts">Page Layouts</a>
                                   <a class="dropdown-item" href="#">Content</a>
                                 </div>
                               </li>
@@ -102,5 +104,7 @@
             @yield('content')
         </main>
     </div>
+    @yield('scripts')
+    @livewireScripts
 </body>
 </html>

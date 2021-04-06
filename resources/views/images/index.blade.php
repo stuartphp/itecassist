@@ -4,7 +4,7 @@
     <div class="card-header">
         <div class="row">
             <div class="col-6">Images</div>
-            <div class="col-6"><a href="/admin/images/create">Create</a></div>
+            <div class="col-6 text-right"><a href="/admin/images/create">Upload</a></div>
         </div>
         </div>
     <div class="card-body">

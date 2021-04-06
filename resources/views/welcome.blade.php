@@ -9,12 +9,10 @@
                 <div class="row d-flex no-gutters slider-text js-fullheight align-items-center align-items-stretch">
                     <div class="col-md-7 ftco-animate d-flex align-items-center">
                         <div class="text w-100 mt-5">
-                            <span class="subheading">Welcome to eroo</h2></span>
+                            <span class="subheading">Welcome to itec</h2></span>
                             <h1>Digital Innovation Company that Creates Solution</h1>
-                            <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia
-                                and Consonantia, there live the blind texts.</p>
-                            <p><a href="#" class="btn btn-primary">Get Started</a> <a href="#"
-                                    class="btn btn-white">View Portfolio</a></p>
+                            <p class="mb-4">We design, build, deploy and maintain innovative custom software that gives our clients the opportunity to start, run and grow world class businesses.</p>
+                                <p><a href="/contact" class="btn btn-primary">Contact Us</a></p>
                         </div>
                     </div>
                 </div>
@@ -30,8 +28,7 @@
                             <h1>Professional &amp; Creative Design Solution</h1>
                             <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia
                                 and Consonantia, there live the blind texts.</p>
-                            <p><a href="#" class="btn btn-primary">Get Started</a> <a href="#"
-                                    class="btn btn-white">View Portfolio</a></p>
+                            <p><a href="/contact" class="btn btn-primary">Contact Us</a></p>
                         </div>
                     </div>
                 </div>
@@ -138,7 +135,7 @@
                     <div class="col-md-6 pl-md-5 py-5">
                         <div class="row justify-content-start pb-3 pt-md-5">
                             <div class="col-md-12 heading-section ftco-animate">
-                                <span class="subheading">Welcome to eroo</span>
+                                <span class="subheading">Welcome to itec</span>
                                 <h2 class="mb-4">Highest <br>Creative Standards</h2>
                                 <p>Far far away, behind the word mountains, far from the countries Vokalia and
                                     Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
@@ -220,7 +217,7 @@
                             <h3>Creative Design</h3>
                             <div class="progress">
                                 <div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
-                                    aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                                    aria-valuemin="0" aria-valuemax="100" style="width:95%">
                                     <span>95%</span>
                                 </div>
                             </div>

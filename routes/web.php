@@ -20,12 +20,17 @@ Route::get('/portfolio', [App\Http\Controllers\SiteController::class, 'portfolio
 Route::get('/blog', [App\Http\Controllers\SiteController::class, 'blog']);
 Route::get('/contact', [App\Http\Controllers\SiteController::class, 'contact']);
 
+Route::prefix('products')->group(function(){
+    Route::get('digital', [App\Http\Controllers\ProductsController::class, 'digital']);
+});
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::group(['middleware' => ['web','auth'], 'prefix'=>'admin'], function () {
 
     Route::resource('images', \App\Http\Controllers\ImagesController::class);
+    Route::resource('layouts', \App\Http\Controllers\LayoutsController::class);
 
     Route::get('crud', [App\Http\Controllers\CrudController::class, 'index']);
 });
