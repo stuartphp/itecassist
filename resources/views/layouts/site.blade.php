@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}">
     <link rel="stylesheet" href="{{ asset('css/flaticon.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}?{{ md5(time()) }}">
     @livewireStyles
 </head>
 
@@ -86,10 +86,10 @@
                     <div class="ftco-footer-widget mb-4 ml-md-4">
                         <h2 class="ftco-heading-2">Explore</h2>
                         <ul class="list-unstyled">
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About</a></li>
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Portfolio</a></li>
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Blog</a></li>
+                            <li><a href="/about"><span class="fa fa-chevron-right mr-2"></span>About</a></li>
+                            <li><a href="/contact"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
+                            <li><a href="/protfolio"><span class="fa fa-chevron-right mr-2"></span>Portfolio</a></li>
+                            <li><a href="/blog"><span class="fa fa-chevron-right mr-2"></span>Blog</a></li>
                         </ul>
                     </div>
                 </div>
@@ -98,9 +98,9 @@
                         <h2 class="ftco-heading-2">Info</h2>
                         <ul class="list-unstyled">
                             <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Join us</a></li>
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Blog</a></li>
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Privacy &amp; Policy</a></li>
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Term &amp; Conditions</a></li>
+                            <li><a href="/blog"><span class="fa fa-chevron-right mr-2"></span>Blog</a></li>
+                            <li><a href="/privacy"><span class="fa fa-chevron-right mr-2"></span>Privacy &amp; Policy</a></li>
+                            <li><a href="/terms"><span class="fa fa-chevron-right mr-2"></span>Term &amp; Conditions</a></li>
                         </ul>
                     </div>
                 </div>
@@ -108,10 +108,9 @@
                     <div class="ftco-footer-widget mb-4">
                         <h2 class="ftco-heading-2">Company</h2>
                         <ul class="list-unstyled">
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About Us</a></li>
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Blog</a></li>
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Careers</a></li>
+                            <li><a href="/about"><span class="fa fa-chevron-right mr-2"></span>About Us</a></li>
+                            <li><a href="/contact"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
+                            <li><a href="/careers"><span class="fa fa-chevron-right mr-2"></span>Careers</a></li>
                         </ul>
                     </div>
                 </div>

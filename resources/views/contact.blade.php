@@ -103,9 +103,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 mt-5">
-                    <div id="map" class="bg-white"></div>
-                </div>
             </div>
         </div>
     </section>

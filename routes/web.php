@@ -22,6 +22,11 @@ Route::get('/contact', [App\Http\Controllers\SiteController::class, 'contact']);
 
 Route::prefix('products')->group(function(){
     Route::get('digital', [App\Http\Controllers\ProductsController::class, 'digital']);
+    Route::get('online', [App\Http\Controllers\ProductsController::class, 'online']);
+    Route::get('graphic', [App\Http\Controllers\ProductsController::class, 'graphic']);
+    Route::get('application', [App\Http\Controllers\ProductsController::class, 'application']);
+    Route::get('web', [App\Http\Controllers\ProductsController::class, 'web']);
+    Route::get('ui', [App\Http\Controllers\ProductsController::class, 'ui']);
 });
 
 Auth::routes();

@@ -55,7 +55,7 @@
                     <div class="media-body">
                         <h3 class="heading mb-3">Digital <br>Products</h3>
                     </div>
-                    <a href="#" class="btn-custom d-flex align-items-center justify-content-center"><span
+                    <a href="/products/digital" class="btn-custom d-flex align-items-center justify-content-center"><span
                             class="fa fa-chevron-right"></span></a>
                 </div>
             </div>
@@ -67,7 +67,7 @@
                     <div class="media-body">
                         <h3 class="heading mb-3">Online <br>Marketing</h3>
                     </div>
-                    <a href="#" class="btn-custom d-flex align-items-center justify-content-center"><span
+                    <a href="/products/online" class="btn-custom d-flex align-items-center justify-content-center"><span
                             class="fa fa-chevron-right"></span></a>
                 </div>
             </div>
@@ -79,7 +79,7 @@
                     <div class="media-body">
                         <h3 class="heading mb-3">Graphic <br>Design</h3>
                     </div>
-                    <a href="#" class="btn-custom d-flex align-items-center justify-content-center"><span
+                    <a href="/products/graphic" class="btn-custom d-flex align-items-center justify-content-center"><span
                             class="fa fa-chevron-right"></span></a>
                 </div>
             </div>
@@ -91,7 +91,7 @@
                     <div class="media-body">
                         <h3 class="heading mb-3">Application <br>Development</h3>
                     </div>
-                    <a href="#" class="btn-custom d-flex align-items-center justify-content-center"><span
+                    <a href="/products/application" class="btn-custom d-flex align-items-center justify-content-center"><span
                             class="fa fa-chevron-right"></span></a>
                 </div>
             </div>
@@ -103,7 +103,7 @@
                     <div class="media-body">
                         <h3 class="heading mb-3">Web <br>Development</h3>
                     </div>
-                    <a href="#" class="btn-custom d-flex align-items-center justify-content-center"><span
+                    <a href="/products/web" class="btn-custom d-flex align-items-center justify-content-center"><span
                             class="fa fa-chevron-right"></span></a>
                 </div>
             </div>
@@ -115,7 +115,7 @@
                     <div class="media-body">
                         <h3 class="heading mb-3">UX/UI <br>Design</h3>
                     </div>
-                    <a href="#" class="btn-custom d-flex align-items-center justify-content-center"><span
+                    <a href="/products/ui" class="btn-custom d-flex align-items-center justify-content-center"><span
                             class="fa fa-chevron-right"></span></a>
                 </div>
             </div>

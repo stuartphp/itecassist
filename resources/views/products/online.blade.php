@@ -8,7 +8,7 @@
                 <p class="breadcrumbs"><span class="mr-2"><a href="/">Home <i
                                 class="fa fa-chevron-right"></i></a></span> <span>Products <i
                             class="fa fa-chevron-right"></i></span></p>
-                <h1 class="mb-0 bread">Digital</h1>
+                <h1 class="mb-0 bread">Online Marketing</h1>
             </div>
         </div>
     </div>
@@ -17,7 +17,7 @@
     <div class="container">
         <div class="row justify-content-center mb-5">
             <div class="col-md-7 heading-section text-center ftco-animate">
-                <span class="subheading">Digital</span>
+                <span class="subheading">Online Marketing</span>
                 <h2>Price &amp; Plans</h2>
             </div>
         </div>
