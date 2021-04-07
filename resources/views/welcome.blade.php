@@ -72,7 +72,7 @@
                 </div>
             </div>
             <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                <div class="services active">
+                <div class="services">
                     <div class="d-flex justify-content-end">
                         <div class="icon d-flex"><span class="flaticon-vector"></span></div>
                     </div>

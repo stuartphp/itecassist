@@ -1,6 +1,6 @@
 @extends('layouts.site')
 @section('content')
-<section class="hero-wrap hero-wrap-2" style="background-image: url('/images/bg_4.jpg');">
+<section class="hero-wrap hero-wrap-2" style="background-image: url('/images/bg_marketing.jpg');">
     <div class="overlay"></div>
     <div class="container">
         <div class="row no-gutters slider-text align-items-end">
