@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [App\Http\Controllers\SiteController::class, 'index']);
 Route::get('/about', [App\Http\Controllers\SiteController::class, 'about']);
-Route::get('/pricing', [App\Http\Controllers\SiteController::class, 'pricing']);
+Route::get('/products', [App\Http\Controllers\SiteController::class, 'products']);
 Route::get('/portfolio', [App\Http\Controllers\SiteController::class, 'portfolio']);
 Route::get('/blog', [App\Http\Controllers\SiteController::class, 'blog']);
 Route::get('/contact', [App\Http\Controllers\SiteController::class, 'contact']);
@@ -36,6 +36,7 @@ Route::group(['middleware' => ['web','auth'], 'prefix'=>'admin'], function () {
 
     Route::resource('images', \App\Http\Controllers\ImagesController::class);
     Route::resource('layouts', \App\Http\Controllers\LayoutsController::class);
+    Route::resource('content', \App\Http\Controllers\ContentController::class);
 
     Route::get('crud', [App\Http\Controllers\CrudController::class, 'index']);
 });

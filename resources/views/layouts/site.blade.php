@@ -38,8 +38,8 @@
                                     class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
                             <a href="#" class="d-flex align-items-center justify-content-center"><span
                                     class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
-                            <a href="#" class="d-flex align-items-center justify-content-center"><span
-                                    class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+                            {{-- <a href="#" class="d-flex align-items-center justify-content-center"><span
+                                    class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a> --}}
                         </p>
                     </div>
                 </div>
@@ -56,10 +56,10 @@
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item {{ request()->is('/') ? 'active':'' }}"><a href="/" class="nav-link">Home</a></li>
-                    <li class="nav-item {{ request()->is('about') ? 'active' :'' }}"><a href="/about" class="nav-link">About</a></li>
-                    <li class="nav-item {{ request()->is('pricing') ? 'active' :'' }}"><a href="/pricing" class="nav-link">Pricing</a></li>
+                    {{-- <li class="nav-item {{ request()->is('about') ? 'active' :'' }}"><a href="/about" class="nav-link">About</a></li> --}}
+                    <li class="nav-item {{ request()->is('products') ? 'active' :'' }}"><a href="/products" class="nav-link">Products</a></li>
                     <li class="nav-item {{ request()->is('portfolio') ? 'active' :'' }}"><a href="/portfolio" class="nav-link">Portfolio</a></li>
-                    <li class="nav-item {{ request()->is('blog') ? 'active' :'' }}"><a href="/blog" class="nav-link">Blog</a></li>
+                    {{-- <li class="nav-item {{ request()->is('blog') ? 'active' :'' }}"><a href="/blog" class="nav-link">Blog</a></li> --}}
                     <li class="nav-item {{ request()->is('contact') ? 'active' :'' }}"><a href="/contact" class="nav-link">Contact</a></li>
                 </ul>
             </div>

@@ -14,9 +14,9 @@ class SiteController extends Controller
     {
         return view('about');
     }
-    public function pricing()
+    public function products()
     {
-        return view('pricing');
+        return view('products');
     }
     public function portfolio()
     {

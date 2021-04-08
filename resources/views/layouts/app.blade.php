@@ -50,7 +50,7 @@
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                   <a class="dropdown-item" href="/admin/images">Images</a>
                                   <a class="dropdown-item" href="/admin/layouts">Page Layouts</a>
-                                  <a class="dropdown-item" href="#">Content</a>
+                                  <a class="dropdown-item" href="/admin/content">Content</a>
                                 </div>
                               </li>
                             @else

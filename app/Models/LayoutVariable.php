@@ -5,13 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Layout extends Model
+class LayoutVariable extends Model
 {
     use HasFactory;
-    protected $table="layouts";
-
-    public function variables()
+    protected $table="layout_variables";
+    public function layout()
     {
-        return $this->hasMany(LayoutVariable::class);
+        return $this->belongsTo(Layout::class);
     }
 }

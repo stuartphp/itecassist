@@ -40,8 +40,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 d-flex align-self-stretch ftco-animate">
-                <div class="pb-4 heading-section heading-section-white">
-                    <h2 class="mb-3">We Shape The <br> Perfect Solutions</h2>
+                <div class="pb-4 heading-section heading-section">
+                    <h2 class="mb-3">We create The <br> Perfect Solutions</h2>
                     <p class="mb-4">A small river named Duden flows by their place and supplies it with the
                         necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly
                         into your mouth.</p>

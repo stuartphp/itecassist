@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Layout;
+use App\Models\Content;
 
-class LayoutsController extends Controller
+class ContentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,10 +14,9 @@ class LayoutsController extends Controller
      */
     public function index()
     {
-        $layouts = Layout::paginate(15);
-        return view('layout.index', compact('layouts'));
+        $contents = Content::paginate(12);
+        return view('content.index', compact('contents'));
     }
-
 
     /**
      * Show the form for creating a new resource.
@@ -26,7 +25,7 @@ class LayoutsController extends Controller
      */
     public function create()
     {
-        return view('layout.create');
+        return view('content.create');
     }
 
     /**
@@ -37,8 +36,7 @@ class LayoutsController extends Controller
      */
     public function store(Request $request)
     {
-        $data = request()->all();
-        dd($data);
+        //
     }
 
     /**
