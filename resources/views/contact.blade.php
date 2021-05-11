@@ -106,5 +106,5 @@
             </div>
         </div>
     </section>
-
+@livewire('site.newsletter')
 @endsection
