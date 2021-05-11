@@ -9,7 +9,7 @@
                 <div class="row d-flex no-gutters slider-text js-fullheight align-items-center align-items-stretch">
                     <div class="col-md-7 ftco-animate d-flex align-items-center">
                         <div class="text w-100 mt-5">
-                            <span class="subheading">Welcome to itec</h2></span>
+                            <span class="subheading">Welcome to itec assist</h2></span>
                             <h1>Digital Innovation Company that Creates Solution</h1>
                             <p class="mb-4">We design, build, deploy and maintain innovative custom software that gives our clients the opportunity to start, run and grow world class businesses.</p>
                                 <p><a href="/contact" class="btn btn-primary">Contact Us</a></p>
@@ -26,8 +26,7 @@
                         <div class="text w-100 mt-5">
                             <span class="subheading">Creative Portfolio</h2></span>
                             <h1>Professional &amp; Creative Design Solution</h1>
-                            <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia
-                                and Consonantia, there live the blind texts.</p>
+                            <p class="mb-4">Design is perhaps the most important aspect of web design overall, as it is the element that brings people in, and keeps them there..</p>
                             <p><a href="/contact" class="btn btn-primary">Contact Us</a></p>
                         </div>
                     </div>
@@ -39,12 +38,10 @@
 <section class="ftco-section ftco-services">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 d-flex align-self-stretch ftco-animate">
+            <div class="col-md-12 d-flex align-self-stretch ftco-animate">
                 <div class="pb-4 heading-section heading-section">
                     <h2 class="mb-3">We create The <br> Perfect Solutions</h2>
-                    <p class="mb-4">A small river named Duden flows by their place and supplies it with the
-                        necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly
-                        into your mouth.</p>
+                    <p class="mb-4"> As a professional Software Development company. When designing a website, we understand that consistent brand identity is key, and we are always thinking about the big picture. With this, we can provide you with a website that makes people want to stick around, which is really everyone’s main goal. Creating a website that is interesting, engaging, and different from all your competitors will make people remember you and will also up the chances of them buying your product or services. Content is also important when it comes to web design,which is something we take into consideration. With good content and quality design, you can’t go wrong.</p>
                 </div>
             </div>
             <div class="col-md-3 d-flex align-self-stretch ftco-animate">
@@ -145,7 +142,7 @@
                                     <div class="icon2 d-flex align-items-center justify-content-center"><span
                                             class="flaticon-light-bulb"></span></div>
                                     <div class="text pl-4">
-                                        <strong class="number" data-number="42">0</strong>
+                                        <strong class="number" data-number="40">0</strong>
                                         <span>Year Of<br> Experienced</span>
                                     </div>
                                 </div>
@@ -157,7 +154,7 @@
         </div>
     </div>
 </section>
-<section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(images/bg_4.jpg);">
+<!-- <section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(images/bg_4.jpg);">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
@@ -203,7 +200,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <section class="ftco-section ftco-faqs services-section bg-light">
     <div class="overlay"></div>
     <div class="container">
