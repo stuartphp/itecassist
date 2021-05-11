@@ -38,8 +38,6 @@
                                     class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
                             <a href="#" class="d-flex align-items-center justify-content-center"><span
                                     class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
-                            {{-- <a href="#" class="d-flex align-items-center justify-content-center"><span
-                                    class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a> --}}
                         </p>
                     </div>
                 </div>
@@ -73,8 +71,8 @@
             <div class="row mb-5">
                 <div class="col-sm-12 col-md">
                     <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2 logo"><a href="#">itec</a></h2>
-                        <p>Far far away, behind the word mountains, far from the countries.</p>
+                        <h2 class="ftco-heading-2 logo"><a href="#">itec assist</a></h2>
+                        <p>Developing createive software soulutions since 1995!</p>
                         <ul class="ftco-footer-social list-unstyled mt-2">
                             <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
                             <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
@@ -86,10 +84,10 @@
                     <div class="ftco-footer-widget mb-4 ml-md-4">
                         <h2 class="ftco-heading-2">Explore</h2>
                         <ul class="list-unstyled">
-                            <li><a href="/about"><span class="fa fa-chevron-right mr-2"></span>About</a></li>
+                            <!-- <li><a href="/about"><span class="fa fa-chevron-right mr-2"></span>About</a></li> -->
                             <li><a href="/contact"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
                             <li><a href="/protfolio"><span class="fa fa-chevron-right mr-2"></span>Portfolio</a></li>
-                            <li><a href="/blog"><span class="fa fa-chevron-right mr-2"></span>Blog</a></li>
+                            <!-- <li><a href="/blog"><span class="fa fa-chevron-right mr-2"></span>Blog</a></li> -->
                         </ul>
                     </div>
                 </div>
@@ -97,14 +95,14 @@
                     <div class="ftco-footer-widget mb-4 ml-md-4">
                         <h2 class="ftco-heading-2">Info</h2>
                         <ul class="list-unstyled">
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Join us</a></li>
-                            <li><a href="/blog"><span class="fa fa-chevron-right mr-2"></span>Blog</a></li>
+                            <!-- <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Join us</a></li> -->
+                            <!-- <li><a href="/blog"><span class="fa fa-chevron-right mr-2"></span>Blog</a></li> -->
                             <li><a href="/privacy"><span class="fa fa-chevron-right mr-2"></span>Privacy &amp; Policy</a></li>
                             <li><a href="/terms"><span class="fa fa-chevron-right mr-2"></span>Term &amp; Conditions</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md">
+                <!-- <div class="col-sm-12 col-md">
                     <div class="ftco-footer-widget mb-4">
                         <h2 class="ftco-heading-2">Company</h2>
                         <ul class="list-unstyled">
@@ -113,7 +111,7 @@
                             <li><a href="/careers"><span class="fa fa-chevron-right mr-2"></span>Careers</a></li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
                 <div class="col-sm-12 col-md">
                     <div class="ftco-footer-widget mb-4">
                         <h2 class="ftco-heading-2">Have a Questions?</h2>
