@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Layout;
+use App\Models\LayoutVariable;
 
 class LayoutsController extends Controller
 {
@@ -38,7 +39,24 @@ class LayoutsController extends Controller
     public function store(Request $request)
     {
         $data = request()->all();
-        dd($data);
+        //dd($data);
+        $id = Layout::create([
+            'name'=>request()->get('name'),
+            'content'=>$_POST['layout']
+        ]);
+
+        for($i=0; $i<count(request('var_name')); $i++)
+        {
+            if(isset(request('var_name')[$i]))
+            {
+                LayoutVariable::create([
+                    'layout_id'=>$id,
+                    'name'=>request('var_name')[$i],
+                    'value'=>request('var_value')[$i],
+                ]);
+            }
+        }
+        return redirect('/admin/layouts');
     }
 
     /**
