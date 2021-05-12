@@ -5,10 +5,12 @@
     <div class="container">
         <div class="row no-gutters slider-text align-items-end">
             <div class="col-md-9 ftco-animate pb-5">
-                <p class="breadcrumbs"><span class="mr-2"><a href="/">Home <i
-                                class="fa fa-chevron-right"></i></a></span> <span>Products <i
-                            class="fa fa-chevron-right"></i></span></p>
-                <h1 class="mb-0 bread">Online Marketing</h1>
+                <p class="breadcrumbs">
+                    <span class="mr-2"><a href="/">Home <i class="fa fa-chevron-right"></i></a></span>
+                    <span><a href="/products">Products <i class="fa fa-chevron-right"></i></a></span>
+                    <span>Digital Marketing</span>
+                </p>
+                <h1 class="mb-0 bread">Digital Marketing</h1>
             </div>
         </div>
     </div>
@@ -17,7 +19,7 @@
     <div class="container">
         <div class="row justify-content-center mb-5">
             <div class="col-md-7 heading-section text-center ftco-animate">
-                <span class="subheading">Online Marketing</span>
+                <span class="subheading">Digital Marketing</span>
                 <h2>Price &amp; Plans</h2>
             </div>
         </div>

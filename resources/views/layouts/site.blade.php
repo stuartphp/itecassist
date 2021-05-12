@@ -5,11 +5,13 @@
     <title>iTec Assist</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Roboto:wght@300;400;500;700;900&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-        rel="stylesheet">
+    <meta name="title" content="Mobile App Development & Digital Transformation Company | iTec Assist">
+    <meta name="description" content="iTec Assist is an award winning mobile app Development Company with professional mobile app developers to build your application.">
+    <meta property="og:title" content="Mobile App Development & Digital Transformation Company | iTec Assist"/>
+    <meta property="og:description" content="iTec Assist is an award winning mobile app Development Company with professional mobile app developers to build your application."/>
+    <meta property="og:url" content="https://www.itecassist.co.za"/>
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
@@ -46,7 +48,7 @@
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html">iTec Assist</a>
+            <a class="navbar-brand" href="/">iTec Assist</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                 aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
@@ -54,11 +56,11 @@
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item {{ request()->is('/') ? 'active':'' }}"><a href="/" class="nav-link">Home</a></li>
-                    {{-- <li class="nav-item {{ request()->is('about') ? 'active' :'' }}"><a href="/about" class="nav-link">About</a></li> --}}
+                    <li class="nav-item {{ request()->is('services') ? 'active' :'' }}"><a href="/services" class="nav-link">Services</a></li>
                     <li class="nav-item {{ request()->is('products') ? 'active' :'' }}"><a href="/products" class="nav-link">Products</a></li>
                     <li class="nav-item {{ request()->is('portfolio') ? 'active' :'' }}"><a href="/portfolio" class="nav-link">Portfolio</a></li>
                     {{-- <li class="nav-item {{ request()->is('blog') ? 'active' :'' }}"><a href="/blog" class="nav-link">Blog</a></li> --}}
-                    <li class="nav-item {{ request()->is('contact') ? 'active' :'' }}"><a href="/contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item {{ request()->is('contact') ? 'active' :'' }}"><a href="/contact" class="nav-link">Contact Us</a></li>
                 </ul>
             </div>
         </div>

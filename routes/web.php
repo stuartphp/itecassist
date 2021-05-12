@@ -19,6 +19,7 @@ Route::get('/products', [App\Http\Controllers\SiteController::class, 'products']
 Route::get('/portfolio', [App\Http\Controllers\SiteController::class, 'portfolio']);
 Route::get('/blog', [App\Http\Controllers\SiteController::class, 'blog']);
 Route::get('/contact', [App\Http\Controllers\SiteController::class, 'contact']);
+Route::get('/services', [App\Http\Controllers\SiteController::class, 'services']);
 
 Route::prefix('products')->group(function(){
     Route::get('digital', [App\Http\Controllers\ProductsController::class, 'digital']);

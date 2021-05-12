@@ -6,9 +6,9 @@
         <div class="container">
             <div class="row no-gutters slider-text align-items-end">
                 <div class="col-md-9 ftco-animate pb-5">
-                    <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i
-                                    class="fa fa-chevron-right"></i></a></span> <span>Contact us <i
-                                class="fa fa-chevron-right"></i></span></p>
+                    <p class="breadcrumbs">
+                        <span class="mr-2"><a href="/">Home <i class="fa fa-chevron-right"></i></a></span>
+                        <span>Contact us</span></p>
                     <h1 class="mb-0 bread">Contact us</h1>
                 </div>
             </div>
@@ -67,7 +67,7 @@
                                             <span class="fa fa-map-marker"></span>
                                         </div>
                                         <div class="text pl-3">
-                                            <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+                                            <p><span>Address:</span> Pretoria, Gauteng, South Africa</p>
                                         </div>
                                     </div>
                                     <div class="dbox w-100 d-flex align-items-center">
@@ -75,7 +75,7 @@
                                             <span class="fa fa-phone"></span>
                                         </div>
                                         <div class="text pl-3">
-                                            <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+                                            <p><span>Phone:</span> +27 82 651 2384</p>
                                         </div>
                                     </div>
                                     <div class="dbox w-100 d-flex align-items-center">
@@ -83,10 +83,7 @@
                                             <span class="fa fa-paper-plane"></span>
                                         </div>
                                         <div class="text pl-3">
-                                            <p><span>Email:</span> <a
-                                                    href="/cdn-cgi/l/email-protection#a9c0c7cfc6e9d0c6dcdbdac0ddcc87cac6c4"><span
-                                                        class="__cf_email__"
-                                                        data-cfemail="2b42454d446b52445e5958425f4e05484446">[email&#160;protected]</span></a>
+                                            <p><span>Email:</span> info@itecassist.co.za</a>
                                             </p>
                                         </div>
                                     </div>
@@ -95,7 +92,7 @@
                                             <span class="fa fa-globe"></span>
                                         </div>
                                         <div class="text pl-3">
-                                            <p><span>Website: </span> <a href="#">yoursite.com</a></p>
+                                            <p><span>Website: </span> <a href="/">itecassist.co.za</a></p>
                                         </div>
                                     </div>
                                 </div>
