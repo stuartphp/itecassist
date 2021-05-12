@@ -1,5 +1,199 @@
 @extends('layouts.site')
+@section('style')
+<style>
+.main-process {
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
 
+.pt-15 {
+    padding-top: 3%
+}
+
+.process-bg {
+    background: url(../images/bg/research-bg.png)top left no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: 83%;
+    background-position: top;
+    min-height: 300px
+}
+
+.process-bg1 {
+    background: url(../images/bg/research-bg1.png)top left no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: 83%;
+    background-position: top;
+    min-height: 300px
+}
+
+.process-bg2 {
+    background: url(../images/bg/research-bg2.png)top left no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: 83%;
+    background-position: top;
+    min-height: 300px
+}
+
+.process-bg3 {
+    background: url(../images/bg/research-bg3.png)top left no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: 83%;
+    background-position: top;
+    min-height: 300px
+}
+
+.process-bg4 {
+    background: url(../images/bg/research-bg4.png)top left no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: 83%;
+    background-position: top;
+    min-height: 300px
+}
+
+.process-title {
+    padding-top: 6%;
+    padding-bottom: 2%;
+    padding-left: 9%
+}
+
+.process-title h3 {
+    font-size: 15px;
+    background: #ccc;
+    position: relative;
+    line-height: 50px;
+    width: 82%;
+    color: #fff;
+    text-align: center
+}
+
+.process-title .digit {
+    font-size: 71px;
+    font-style: italic;
+    font-weight: 700;
+    position: absolute;
+    left: -23px;
+    z-index: 2;
+    text-shadow: 6px 0 0 #fff;
+    color: #3d6b6b
+}
+
+.process-title .digit1 {
+    font-size: 71px;
+    font-style: italic;
+    font-weight: 700;
+    position: absolute;
+    left: -34px;
+    z-index: 2;
+    text-shadow: 6px 0 0 #fff;
+    color: #562f8a
+}
+
+.process-title .digit2 {
+    font-size: 71px;
+    font-style: italic;
+    font-weight: 700;
+    position: absolute;
+    left: -33px;
+    z-index: 2;
+    text-shadow: 6px 0 0 #fff;
+    color: #a40a63
+}
+
+.process-title .digit3 {
+    font-size: 71px;
+    font-style: italic;
+    font-weight: 700;
+    position: absolute;
+    left: -45px;
+    z-index: 2;
+    text-shadow: 6px 0 0 #fff;
+    color: #db6224
+}
+
+.process-title .digit4 {
+    font-size: 71px;
+    font-style: italic;
+    font-weight: 700;
+    position: absolute;
+    left: -38px;
+    z-index: 2;
+    text-shadow: 7px 1px 0 #fff;
+    color: #434f9e
+}
+
+.process-title .icon {
+    position: absolute;
+    right: -20px;
+    background: #333;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+    border: 5px solid #fff;
+    top: -5px;
+    line-height: initial
+}
+
+.process-title .icon img {
+    width: 100%
+}
+
+.process-title h3:before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 30px;
+    height: 104%;
+    z-index: 1;
+    left: -21px;
+    top: -3px;
+    transform: rotate(12deg)
+}
+
+.process-title.dipi1 h3,
+.process-title.dipi1 .icon {
+    background: linear-gradient(to right, #3d6b6b, #4d5ca3)
+}
+
+.process-title.dipi2 h3,
+.process-title.dipi2 .icon {
+    background: linear-gradient(to right, #562f8a, #85378d)
+}
+
+.process-title.dipi3 h3,
+.process-title.dipi3 .icon {
+    background: linear-gradient(to right, #a40a63, #c05d5a)
+}
+
+.process-title.dipi4 h3,
+.process-title.dipi4 .icon {
+    background: linear-gradient(to right, #db6224, #e9a26b)
+}
+
+.process-title.dipi5 h3,
+.process-title.dipi5 .icon {
+    background: linear-gradient(to right, #434f9e, #49b4e7)
+}
+
+.pt-12 {
+    padding-top: 12%
+}
+
+.process-content {
+    padding: 1% 5% 1% 10%;
+    font-size: 0.8rem;
+    color: black;
+}
+  
+
+</style>
+@endsection
 @section('content')
     <section class="hero-wrap">
         <div class="home-slider owl-carousel js-fullheight">
@@ -225,7 +419,7 @@
                     </div>
                 </div>
             </div>
-            <div class="pt-12">
+            <div>
                 <div class="row">
                     <div class="col-md-4 col-lg-4 col-xs-12 col-sm-6 bounceInLeft animated ">
                         <div class="process-bg3">
@@ -308,7 +502,7 @@
                                         <li><span class="fa fa-check-circle mr-2"></span>Symphony</li>
                                         <li><span class="fa fa-check-circle mr-2"></span>Codeigniter</li>
                                         <li><span class="fa fa-check-circle mr-2"></span>Bootstrap</li>
-                                        <li><span class="fa fa-check-circle mr-2"></span>Tailwing</li>
+                                        <li><span class="fa fa-check-circle mr-2"></span>Tailwind</li>
                                         <li><span class="fa fa-check-circle mr-2"></span>Wordpress</li>
                                         <li><span class="fa fa-check-circle mr-2"></span>Drupal</li>
                                     </ul>

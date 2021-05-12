@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}">
     <link rel="stylesheet" href="{{ asset('css/flaticon.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}?{{ md5(time()) }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
+    @yield('style')
     @livewireStyles
 </head>
 
@@ -57,8 +59,8 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item {{ request()->is('/') ? 'active':'' }}"><a href="/" class="nav-link">Home</a></li>
                     <li class="nav-item {{ request()->is('services') ? 'active' :'' }}"><a href="/services" class="nav-link">Services</a></li>
-                    <li class="nav-item {{ request()->is('products') ? 'active' :'' }}"><a href="/products" class="nav-link">Products</a></li>
-                    <li class="nav-item {{ request()->is('portfolio') ? 'active' :'' }}"><a href="/portfolio" class="nav-link">Portfolio</a></li>
+                    <!-- <li class="nav-item {{ request()->is('products') ? 'active' :'' }}"><a href="/products" class="nav-link">Products</a></li>
+                    <li class="nav-item {{ request()->is('portfolio') ? 'active' :'' }}"><a href="/portfolio" class="nav-link">Portfolio</a></li> -->
                     {{-- <li class="nav-item {{ request()->is('blog') ? 'active' :'' }}"><a href="/blog" class="nav-link">Blog</a></li> --}}
                     <li class="nav-item {{ request()->is('contact') ? 'active' :'' }}"><a href="/contact" class="nav-link">Contact Us</a></li>
                 </ul>
@@ -88,7 +90,7 @@
                         <ul class="list-unstyled">
                             <!-- <li><a href="/about"><span class="fa fa-chevron-right mr-2"></span>About</a></li> -->
                             <li><a href="/contact"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
-                            <li><a href="/protfolio"><span class="fa fa-chevron-right mr-2"></span>Portfolio</a></li>
+                            <li><a href="/services"><span class="fa fa-chevron-right mr-2"></span>Services</a></li>
                             <!-- <li><a href="/blog"><span class="fa fa-chevron-right mr-2"></span>Blog</a></li> -->
                         </ul>
                     </div>
@@ -135,9 +137,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <p class="mb-0" style="color: rgba(255,255,255,.5);">
-                            Copyright &copy; All rights reserved | This template is made with <i
-                                class="fa fa-heart color-danger" aria-hidden="true"></i> by <a
-                                href="https://colorlib.com" target="_blank" rel="nofollow noopener">Colorlib</a>
+                            Copyright &copy; All rights reserved 
                         </p>
                     </div>
                 </div>
@@ -163,6 +163,17 @@
     <script src="{{ asset('js/scrollax.min.js') }}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
     @livewireScripts
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script>
+	window.addEventListener('alert', event => { 
+		toastr[event.detail.type](event.detail.message, event.detail.title ?? '') 
+		toastr.options = {
+			"closeButton": true,
+			"progressBar": true,
+		}
+	});
+  
+ </script>
 </body>
 
 </html>

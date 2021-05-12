@@ -30,6 +30,11 @@ class SiteController extends Controller
     {
         return view('contact');
     }
+    public function contactPost()
+    {
+        dd('hi');
+        return view('contact');
+    }
     public function services()
     {
         return view('services');

@@ -24,17 +24,24 @@
                                 <div class="contact-wrap w-100 p-md-5 p-4">
                                     <h3 class="mb-4">Get in touch</h3>
                                     <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                                        @csrf
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <input type="text" class="form-control" name="name" id="name"
-                                                        placeholder="Name">
+                                                        placeholder="Name" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <input type="email" class="form-control" name="email" id="email"
-                                                        placeholder="Email">
+                                                        placeholder="Email" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="number" id="number"
+                                                        placeholder="Contact Number" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-12">

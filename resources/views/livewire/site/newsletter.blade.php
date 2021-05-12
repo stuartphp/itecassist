@@ -8,13 +8,12 @@
                     <h2>Join Us Newsletter</h2>
                     <p>Sign Up to our Newsletter and get our latest news update</p>
                     <div class="row justify-content-center">
-                        <div class="col-md-6">
-                            <form action="#" class="subscribe-form">
-                                <div class="form-group d-flex">
-                                    <input type="text" class="form-control" placeholder="Enter email address">
-                                    <input type="submit" value="Subscribe" class="submit px-3">
-                                </div>
-                            </form>
+                        <div class="col-md-6">                          
+                            <div class="form-group d-flex">
+                                <input type="text" class="form-control" wire:model="newsletter" placeholder="Enter email address">
+                                <input type="submit" value="Save" wire:click.prevent="saveNewsletter" class="btn btn-primary">
+                            </div>
+                            @error('newsletter') <span class="text-danger">{{ $message }}</span> @enderror
                         </div>
                     </div>
                 </div>
