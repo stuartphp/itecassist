@@ -61,7 +61,7 @@
                     <li class="nav-item {{ request()->is('services') ? 'active' :'' }}"><a href="/services" class="nav-link">Services</a></li>
                     <!-- <li class="nav-item {{ request()->is('products') ? 'active' :'' }}"><a href="/products" class="nav-link">Products</a></li>
                     <li class="nav-item {{ request()->is('portfolio') ? 'active' :'' }}"><a href="/portfolio" class="nav-link">Portfolio</a></li> -->
-                    {{-- <li class="nav-item {{ request()->is('blog') ? 'active' :'' }}"><a href="/blog" class="nav-link">Blog</a></li> --}}
+                    <li class="nav-item {{ request()->is('fqa') ? 'active' :'' }}"><a href="/fqa" class="nav-link">Frequent Questions</a></li>
                     <li class="nav-item {{ request()->is('contact') ? 'active' :'' }}"><a href="/contact" class="nav-link">Contact Us</a></li>
                 </ul>
             </div>
@@ -137,7 +137,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <p class="mb-0" style="color: rgba(255,255,255,.5);">
-                            Copyright &copy; All rights reserved 
+                            Copyright &copy; All rights reserved
                         </p>
                     </div>
                 </div>
@@ -165,14 +165,14 @@
     @livewireScripts
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
   <script>
-	window.addEventListener('alert', event => { 
-		toastr[event.detail.type](event.detail.message, event.detail.title ?? '') 
+	window.addEventListener('alert', event => {
+		toastr[event.detail.type](event.detail.message, event.detail.title ?? '')
 		toastr.options = {
 			"closeButton": true,
 			"progressBar": true,
 		}
 	});
-  
+
  </script>
 </body>
 
