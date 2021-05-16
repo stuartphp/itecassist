@@ -39,9 +39,9 @@ class SiteController extends Controller
             'name' => 'required',
             'email' => 'required|email',
             'phone' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
-            'subject'=>'required',
+            'subject' => 'required',
             'message' => 'required'
-            ]);
+        ]);
 
         //  Store data in database
         Contact::create($request->all());
@@ -59,10 +59,10 @@ class SiteController extends Controller
         });
 
         return back()->with('success', 'We have received your message and will get back to you within 24 hours.');
-
     }
     public function services()
     {
         return view('services');
     }
+
 }
