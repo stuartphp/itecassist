@@ -22,4 +22,13 @@ Route::get('/contact', [App\Http\Controllers\SiteController::class, 'contact']);
 Route::post('/contact', [App\Http\Controllers\SiteController::class, 'contactPost']);
 Route::get('/services', [App\Http\Controllers\SiteController::class, 'services']);
 
-//Auth::routes();
+Auth::routes();
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::group(['middleware' => ['web','auth'], 'prefix'=>'admin'], function () {
+    Route::resource('customers', \App\Http\Controllers\Admin\CustomersController::class);
+    Route::resource('products', \App\Http\Controllers\Admin\ProductsController::class);
+    Route::get('customers/set/{id}', [\App\Http\Controllers\Admin\CustomersController::class, 'set']);
+    Route::prefix('profile')->group(function () {
+        Route::get('/', [\App\Http\Controllers\Admin\ProfileController::class, 'index']);
+    });
+});
