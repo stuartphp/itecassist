@@ -5,8 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Image extends Model
+class Counter extends Model
 {
     use HasFactory;
-    protected $table="images";
+    protected $table = 'counters';
+    protected $fillable = [
+        'name',
+        'prefix',
+        'number'
+    ];
 }

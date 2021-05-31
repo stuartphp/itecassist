@@ -3,21 +3,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
     <title>{{ config('app.name', 'Laravel') }}</title>
-
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
     @yield('css')
     @livewireStyles
 </head>
@@ -38,10 +34,10 @@
                         @auth
                             @if (Auth::user()->is_admin == 1)
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Admin</a>
+                                <a class="nav-link" href="/admin/customers">Customers</a>
                               </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/admin/crud">Crud</a>
+                                <a class="nav-link" href="/admin/products">Products</a>
                               </li>
                               <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -99,12 +95,46 @@
                 </div>
             </div>
         </nav>
-
         <main class="pt-2 container">
+        @if ($message = Session::get('success'))
+<div class="alert alert-success  alert-dismissible fade show" role="alert">
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <strong>{{ $message }}</strong>
+</div>
+@endif
+
+@if ($message = Session::get('error'))
+<div class="alert alert-danger  alert-dismissible fade show" role="alert">
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <strong>{{ $message }}</strong>
+</div>
+@endif
+
+@if ($message = Session::get('warning'))
+<div class="alert alert-warning  alert-dismissible fade show" role="alert">
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <strong>{{ $message }}</strong>
+</div>
+@endif
+
+@if ($message = Session::get('info'))
+<div class="alert alert-info  alert-dismissible fade show" role="alert">
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <strong>{{ $message }}</strong>
+</div>
+@endif
+
+@if ($errors->any())
+<div class="alert alert-danger">
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    Check the following errors :(
+</div>
+@endif
             @yield('content')
         </main>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+     @livewireScripts
     @yield('scripts')
-    @livewireScripts
 </body>
 </html>

@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Content;
+use App\Models\Product;
 
-class ContentController extends Controller
+class ProductsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +15,8 @@ class ContentController extends Controller
      */
     public function index()
     {
-        $contents = Content::paginate(12);
-        return view('content.index', compact('contents'));
+        $data = Product::orderBy('name', 'asc')->paginate(12);
+        return view('admin.products.index', compact('data'));
     }
 
     /**
@@ -25,7 +26,7 @@ class ContentController extends Controller
      */
     public function create()
     {
-        return view('content.create');
+        return view('admin.products.form');
     }
 
     /**
@@ -36,7 +37,17 @@ class ContentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validated = $request->validate([
+            'reference' => 'required|unique:products,reference',
+            'name'  =>'required',
+            'description'=>'required',
+            'unit'=>'required',
+            'retail_price'=>'required|numeric'
+        ]);
+        Product::create($validated);
+        session()->flash('success', 'Record Updated');
+        return redirect('/admin/products');
+
     }
 
     /**
@@ -58,7 +69,9 @@ class ContentController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data = Product::find($id);
+
+        return view('admin.products.form', compact('data'));
     }
 
     /**
@@ -70,7 +83,12 @@ class ContentController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = request()->all();
+        $rec = Product::findOrFail($id);
+        $rec->update($data);
+        $rec->save();
+        session()->flash('success', 'Record Updated');
+        return redirect('/admin/products');
     }
 
     /**
@@ -82,5 +100,10 @@ class ContentController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function validation()
+    {
+
     }
 }

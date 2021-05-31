@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Layout;
-use App\Models\LayoutVariable;
+use App\Models\Customer;
 
-class LayoutsController extends Controller
+class CustomersController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,10 +15,9 @@ class LayoutsController extends Controller
      */
     public function index()
     {
-        $layouts = Layout::paginate(15);
-        return view('layout.index', compact('layouts'));
+        $data = Customer::orderBy('company_name', 'asc')->paginate(12);
+        return view('admin.customers.index', compact('data'));
     }
-
 
     /**
      * Show the form for creating a new resource.
@@ -27,7 +26,7 @@ class LayoutsController extends Controller
      */
     public function create()
     {
-        return view('layout.create');
+        return view('admin.customers.form');
     }
 
     /**
@@ -38,25 +37,15 @@ class LayoutsController extends Controller
      */
     public function store(Request $request)
     {
-        $data = request()->all();
-        //dd($data);
-        $id = Layout::create([
-            'name'=>request()->get('name'),
-            'content'=>$_POST['layout']
+        $valitated = request()->validate([
+            'reference' => 'required|unique:customes,reference',
+            'company_name'  =>'required',
+            'address'   =>'required',
+            'contact_person'=>'required',
+            'contact_number'=>'required',
+            'email'=>'required|email',
+            'password'=>'required'
         ]);
-
-        for($i=0; $i<count(request('var_name')); $i++)
-        {
-            if(isset(request('var_name')[$i]))
-            {
-                LayoutVariable::create([
-                    'layout_id'=>$id,
-                    'name'=>request('var_name')[$i],
-                    'value'=>request('var_value')[$i],
-                ]);
-            }
-        }
-        return redirect('/admin/layouts');
     }
 
     /**
@@ -102,5 +91,12 @@ class LayoutsController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function set($id)
+    {
+        $rec = Customer::findOrFail($id)->toArray();
+        session()->put($rec);
+        return redirect('admin/profile');
     }
 }

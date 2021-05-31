@@ -35,10 +35,12 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::group(['middleware' => ['web','auth'], 'prefix'=>'admin'], function () {
+    Route::resource('customers', \App\Http\Controllers\Admin\CustomersController::class);
+    Route::resource('products', \App\Http\Controllers\Admin\ProductsController::class);
+    Route::get('customers/set/{id}', [\App\Http\Controllers\Admin\CustomersController::class, 'set']);
+    Route::prefix('profile')->group(function () {
+        Route::get('/', [\App\Http\Controllers\Admin\ProfileController::class, 'index']);
+    });
 
-    Route::resource('images', \App\Http\Controllers\ImagesController::class);
-    Route::resource('layouts', \App\Http\Controllers\LayoutsController::class);
-    Route::resource('content', \App\Http\Controllers\ContentController::class);
 
-    Route::get('crud', [App\Http\Controllers\CrudController::class, 'index']);
 });
