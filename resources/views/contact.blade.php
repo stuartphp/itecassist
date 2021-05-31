@@ -22,47 +22,74 @@
                         <div class="row no-gutters">
                             <div class="col-md-7 d-flex align-items-stretch">
                                 <div class="contact-wrap w-100 p-md-5 p-4">
-                                    <h3 class="mb-4">Get in touch</h3>
-                                    <form method="POST" id="contactForm" name="contactForm" class="contactForm">
-                                        @csrf
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" name="name" id="name"
-                                                        placeholder="Name" required>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input type="email" class="form-control" name="email" id="email"
-                                                        placeholder="Email" required>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" name="number" id="number"
-                                                        placeholder="Contact Number" required>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" name="subject" id="subject"
-                                                        placeholder="Subject">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <textarea name="message" class="form-control" id="message" cols="30"
-                                                        rows="7" placeholder="Message"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <input type="submit" value="Send Message" class="btn btn-primary">
-                                                    <div class="submitting"></div>
-                                                </div>
-                                            </div>
+                                    <!-- Success message -->
+                                    @if(Session::has('success'))
+                                        <div class="alert alert-success">
+                                            {{Session::get('success')}}
                                         </div>
+                                    @endif
+                                    <h3 class="mb-4">Get in touch</h3>
+                                    <form action="" method="post" action="/contact">
+
+                                        @csrf
+
+                                        <div class="form-group">
+                                            <label>Name</label>
+                                            <input type="text" class="form-control {{ $errors->has('name') ? 'error' : '' }}" name="name" id="name" value="{{ old('name') }}">
+
+                                            <!-- Error -->
+                                            @if ($errors->has('name'))
+                                            <div class="text-danger">
+                                                {{ $errors->first('name') }}
+                                            </div>
+                                            @endif
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Email</label>
+                                            <input type="email" class="form-control {{ $errors->has('email') ? 'error' : '' }}" name="email" id="email" value="{{ old('email') }}">
+
+                                            @if ($errors->has('email'))
+                                            <div class="text-danger">
+                                                {{ $errors->first('email') }}
+                                            </div>
+                                            @endif
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Phone</label>
+                                            <input type="text" class="form-control {{ $errors->has('phone') ? 'error' : '' }}" name="phone" id="phone" value="{{ old('phone') }}">
+
+                                            @if ($errors->has('phone'))
+                                            <div class="text-danger">
+                                                {{ $errors->first('phone') }}
+                                            </div>
+                                            @endif
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Subject</label>
+                                            <input type="text" class="form-control {{ $errors->has('subject') ? 'error' : '' }}" name="subject" id="subject" value="{{ old('subject') }}">
+
+                                            @if ($errors->has('subject'))
+                                            <div class="text-danger">
+                                                {{ $errors->first('subject') }}
+                                            </div>
+                                            @endif
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Message</label>
+                                            <textarea class="form-control {{ $errors->has('message') ? 'error' : '' }}" name="message" id="message" rows="4">{{ old('message') }}</textarea>
+
+                                            @if ($errors->has('message'))
+                                            <div class="text-danger">
+                                                {{ $errors->first('message') }}
+                                            </div>
+                                            @endif
+                                        </div>
+
+                                        <input type="submit" name="send" value="Submit" class="btn btn-dark btn-block">
                                     </form>
                                 </div>
                             </div>

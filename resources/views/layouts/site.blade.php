@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}">
     <link rel="stylesheet" href="{{ asset('css/flaticon.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}?{{ md5(time()) }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
     @yield('style')
     @livewireStyles
@@ -61,7 +61,7 @@
                     <li class="nav-item {{ request()->is('services') ? 'active' :'' }}"><a href="/services" class="nav-link">Services</a></li>
                     <!-- <li class="nav-item {{ request()->is('products') ? 'active' :'' }}"><a href="/products" class="nav-link">Products</a></li>
                     <li class="nav-item {{ request()->is('portfolio') ? 'active' :'' }}"><a href="/portfolio" class="nav-link">Portfolio</a></li> -->
-                    {{-- <li class="nav-item {{ request()->is('blog') ? 'active' :'' }}"><a href="/blog" class="nav-link">Blog</a></li> --}}
+                    <li class="nav-item {{ request()->is('fqa') ? 'active' :'' }}"><a href="/fqa" class="nav-link">Frequent Questions</a></li>
                     <li class="nav-item {{ request()->is('contact') ? 'active' :'' }}"><a href="/contact" class="nav-link">Contact Us</a></li>
                 </ul>
             </div>
@@ -76,7 +76,7 @@
                 <div class="col-sm-12 col-md">
                     <div class="ftco-footer-widget mb-4">
                         <h2 class="ftco-heading-2 logo"><a href="#">itec assist</a></h2>
-                        <p>Developing createive software soulutions since 1995!</p>
+                        <p>Developing createive software solutions since 1995!</p>
                         <ul class="ftco-footer-social list-unstyled mt-2">
                             <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
                             <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
@@ -137,7 +137,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <p class="mb-0" style="color: rgba(255,255,255,.5);">
-                            Copyright &copy; All rights reserved 
+                            Copyright &copy; All rights reserved
                         </p>
                     </div>
                 </div>
@@ -165,14 +165,14 @@
     @livewireScripts
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
   <script>
-	window.addEventListener('alert', event => { 
-		toastr[event.detail.type](event.detail.message, event.detail.title ?? '') 
+	window.addEventListener('alert', event => {
+		toastr[event.detail.type](event.detail.message, event.detail.title ?? '')
 		toastr.options = {
 			"closeButton": true,
 			"progressBar": true,
 		}
 	});
-  
+
  </script>
 </body>
 
