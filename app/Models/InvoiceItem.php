@@ -16,6 +16,8 @@ class InvoiceItem extends Model
         'name',
         'desription',
         'unit',
-        'amount'
+        'quantity',
+        'retail_price',
+        'total'
     ];
 }

@@ -33,7 +33,7 @@
 </table>
 </div>
 <div class="card-footer">
-
+{{ $data->links() }}
 </div>
 </div>
 @endsection

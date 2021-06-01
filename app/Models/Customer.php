@@ -16,6 +16,7 @@ class Customer extends Model
         'contact_person',
         'contact_number',
         'email',
-        'password'
+        'password',
+        'is_active'
     ];
 }

@@ -15,6 +15,7 @@ class Invoice extends Model
         'action_date',
         'due_date',
         'amount',
-        'is_paid'
+        'is_paid',
+        'notes'
     ];
 }

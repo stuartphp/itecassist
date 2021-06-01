@@ -10,7 +10,7 @@ class RecurringInvoiceItem extends Model
     use HasFactory;
     protected $table = 'recurring_invoice_items';
     protected $fillable = [
-        'recurring_invoice_id',
+        'customer_id',
         'product_id',
         'product_reference',
         'name',

@@ -10,35 +10,35 @@
     <div class="card-body">
         <div class="mb-3">
             <label for="reference" class="form-label">Reference</label>
-            <input type="text" class="form-control form-control-sm" id="reference" value="{{ isset($data->reference) ? $data->reference : old('reference')}}">
+            <input type="text" class="form-control form-control-sm" id="reference" name="reference" value="{{ isset($data->reference) ? $data->reference : old('reference')}}">
             @error('reference')
             <span class="text-danger">{{ $message }}</span>
             @enderror
         </div>
         <div class="mb-3">
             <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control form-control-sm" id="name" value="{{ isset($data->name) ? $data->name : old('name')}}">
+            <input type="text" class="form-control form-control-sm" id="name" name="name" value="{{ isset($data->name) ? $data->name : old('name')}}">
             @error('name')
             <span class="text-danger">{{ $message }}</span>
             @enderror
         </div>
         <div class="mb-3">
             <label for="description" class="form-label">Description</label>
-            <textarea class="form-control form-control-sm" id="description" rows="6">{!! isset($data->description) ? $data->description : old('description') !!}</textarea>
+            <textarea class="form-control form-control-sm" name="description" id="description" rows="6">{!! isset($data->description) ? $data->description : old('description') !!}</textarea>
             @error('description')
             <span class="text-danger">{{ $message }}</span>
             @enderror
         </div>
         <div class="mb-3">
             <label for="unit" class="form-label">Unit</label>
-            <input type="text" class="form-control form-control-sm" id="unit" value="{{ isset($data->unit) ? $data->unit : old('unit')}}">
+            <input type="text" class="form-control form-control-sm" name="unit" id="unit" value="{{ isset($data->unit) ? $data->unit : old('unit')}}">
             @error('unit')
             <span class="text-danger">{{ $message }}</span>
             @enderror
         </div>
         <div class="mb-3">
             <label for="retail_price" class="form-label">Retail Price</label>
-            <input type="text" class="form-control form-control-sm" id="retail_price" value="{{ isset($data->retail_price) ? $data->retail_price : old('retail_price')}}">
+            <input type="text" class="form-control form-control-sm" name="retail_price" id="retail_price" value="{{ isset($data->retail_price) ? $data->retail_price : old('retail_price')}}">
             @error('retail_price')
             <span class="text-danger">{{ $message }}</span>
             @enderror

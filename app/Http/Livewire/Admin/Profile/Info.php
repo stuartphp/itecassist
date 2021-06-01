@@ -15,6 +15,7 @@ class Info extends Component
     public $contact_number;
     public $email;
     public $password;
+    public $is_active;
 
     protected $rules = [
         'reference' => 'required',
@@ -41,6 +42,7 @@ class Info extends Component
         $this->contact_number=$res->contact_number;
         $this->email=$res->email;
         $this->password=$res->password;
+        $this->is_active=$res->is_active;
     }
 
     public function saveForm()
